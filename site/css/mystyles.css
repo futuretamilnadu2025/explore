@@ -202,3 +202,14 @@ and (orientation : portrait) {
 		height: 40px;
 	}
 }
+
+.para_center {
+	text-align: center;
+}
+
+.row-content-header{
+	margin:0px auto;
+	padding:50px 0px 50px 0px;
+	border-bottom: 1px ridge;
+	min-height: 50px;
+}

@@ -29,13 +29,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">
-                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
-                    </li>
-                    <li class="active"><a href="#">
-                    <i class="fa fa-user" aria-hidden="true"></i> 
-                     About</a>
-                    </li>
+                    <li><a href="#">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                    <li><a href="about.html">
+                    <i class="fa fa-user" aria-hidden="true"></i> About</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
                         aria-haspopup="true" aria-expanded="false">
@@ -46,7 +43,7 @@
                             <li><a href="#">Photo Gallery</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html"><i class="fa fa-envelope-o"></i> Contact</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-envelope-o"></i> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -56,7 +53,7 @@
 
         <!-- Main component for a primary marketing message or call to action -->
 
-         <div class="container">
+        <div class="container">
             <div class="row row-header">
                 <div class="col-xs-12 col-sm-3">
                     <img src="img\logo.jpg" class="logo-image1">
@@ -68,26 +65,99 @@
                 </div>
             </div>
         </div>
-
     </header>
 
     <div class="container">
-        <div class="row row-content">
-            <div class="col-xs-12 col-sm-3">
-               <!-- <p style="padding:20px;"></p> -->
-                <!-- <h3 align="center">Vision</h3> -->
-                <img src="img\aboutus.jpg" width="220" height="150">
+        <div class="row row-header">
+            <div class="col-xs-12 col-sm-4">
+                <h3>Our Location</h3>
+                <p>   121, ABC Road,<br>
+                      XYZ, Tamil nadu<br>
+                      India<br>
+                      <i class="fa fa-phone"></i>: +91 1234 567890<br>
+                      <i class="fa fa-envelope"></i>: <a href="mailto:futuretamilnadu2025@gmail.com">futuretamilnadu2025@gmail.com</a>
+                </p>
+                <div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-primary" href="tel:+1234567890">
+                        <i class="fa fa-phone"></i>Call
+                    </a>
+                    <a type="button" class="btn btn-info">
+                    <i class="fa fa-skype"></i>Skype
+                    </a>
+                    <a type="button" class="btn btn-success" href="mailto:futuretamilnadu2025@gmail.com">
+                    <i class="fa fa-envelope-o"></i>Email
+                    </a>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-9">
-                <h2>About Us</h2>
-                <p>We are like you who wants our rights to be preserved, our growth to be enhanced and our future to be bright.
-                We strive hard to achieve the only goal that is betterment of society. </p>
-                
-            </div>
+
         </div>
 
+        <div class="row row-header">
+            <div class="col-xs-12 col-sm-12">
+            <h3>Send Us Your Feedback</h3>
+            </div>
+            <div class="col-xs-12 col-sm-12">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="name" class="col-xs-12 col-sm-2 control-label"> 
+                            Name
+                        </label>
+                        <div class="col-sm-10">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telnum" class="col-xs-12 col-sm-2 control-label" >
+                            Contact Tel.
+                        </label>
+                        <div class="col-xs-5 col-sm-4 col-md-3">
+                            <div class="input-group">
+                                <div class="input-group-addon">(</div>
+                                <input type="tel" name="areacode" class="form-control" id="areacode" placeholder="Area code">
+                                <div class="input-group-addon">)</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 col-sm-6 col-md-7">
+                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel.number">
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="emailid" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox col-sm-3 col-sm-offset-2">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="approve" value="">
+                                <strong>May we contact you?</strong>
+                            </label>                            
+                        </div>
+                        <div class="col-sm-3">
+                            <select class="form-control">
+                                <option>Tel.</option>
+                                <option>Email</option>
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback" class="col-sm-2 control-label">Your Feedback</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                        </div>                        
+                    </div>        
+                </form>
+            </div>
 
-        
+        </div>
+
     </div>
 
     <footer class="row-footer">
@@ -99,7 +169,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-8 col-sm-5">
@@ -123,7 +193,7 @@
                         <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12">
+                <div class="col-xs-12 col-xs-offset-1 col-sm-12 col-sm-offset-1">
                     <p style="padding:10px;"></p>
                     <p align="center">&#169; Copyright 2017 Future Tamilnadu 2025</p>
                 </div>
